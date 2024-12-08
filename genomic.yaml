@@ -1,0 +1,24 @@
+name: genomic_env
+channels:
+  - ursky
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=2.7
+  - bwa
+  - samtools
+  - metabat2
+  - concoct
+  - MaxBin2
+  - checkm-genome
+  - prodigal
+  - pplacer 
+  - numpy
+  - matplotlib
+  - pysam
+  - hmmer
+  - SPAdes
+  - salmon
+  - seaborn  
+  - metawrap-mg

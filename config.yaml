@@ -1,0 +1,41 @@
+### Input and output folder
+# metagenmoic analysis
+READS_SUF: ".fastq"
+READS_DIR: "cleanreads"
+ASSEMBLY_DIR: "Assembly"
+PRODIGAL_DIR: "Prodigal"  
+CDHIT_DIR: "CD_hit"  
+FILTERED_DIR: "Filtered"
+BBMAP_DIR: "BBMap"  
+BWA_INDEX: "BBMap/bwa_index"
+MAPPING: "BBMap/mapping"
+PILEUP: "BBMap/pileup"
+GENE_ABUN_DIR: "Abundance" 
+KODB_DIR: "kofam_database"        
+KEGG_DIR: "KEGG_annotation"       
+OUT_DIR: "final_output"
+TABLE: "table"
+# genenomic gain
+METAWRAP_DIR: "metawrap"
+FINAL_BINS_DIR: "final_bins"
+ALL_BINS_DIR: "all_bins"
+BIN_ABUNDANCE_DIR: "bin_abundance"
+# genomic annotation
+BINS_PROTEIN_DIR: "bin_protein"
+KEGG_BINS_DIR: "kegg_annotation_bins"
+GTDB_OUTPUT_DIR: "GTDB_taxonomy"
+
+# Thread configuration for specific rules
+threads:
+  megahit: 8
+  prodigal: 4
+  cdhit: 4
+  bwa: 8
+  metawrap_binning: 8
+  metawrap_refinement: 8
+  quantify_bins: 8
+
+# CPU configuration for specific rules
+cpu:
+  kegg_annotation: 4
+  gtdb_classification: 4
