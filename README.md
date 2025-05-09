@@ -1,4 +1,4 @@
-# Metasnake
+# DiTing v2.0
 ## Introduction
 An easy-to-use wrapper for a robust snakemake pipeline designed for metagenomic assembly, gene prediction, genomic binning, taxonomy and functional annotations analysis of biogeochemical cycles. The pipeline features a series of flexible, interdependent modules optimized for fast execution. Each module can also be executed independently as a single pipeline, depending on the provided input. Interestingly, Diting 2.0v can be able to modify and add new modules based on snakemake workflow.
 ## Workflow
